@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#change the strings as needed
+#change the variables as needed
 interface=eno1
 zone=ZONE ID WHERE DOMAIN(S) TO UPDATE RESIDE
 record=DOMAIN RECORD TO UPDATE
 token=SECRET TOKEN
 domain=some.domain.com
-old_ipv6=$(cat $domain.ipv6) # | sed s/\ //g)
+old_ipv6=$(cat $domain.ipv6)
 log_file=./$domain.log
 ip6_file=./$domain.ipv6
 
@@ -25,7 +25,7 @@ fi
 echo $old_ipv6
 echo $ipv6
 
-#Testing if saved IPV6 is different from current one
+#Testing if saved IPV6 is different from saved one
 if [ $ipv6 == $old_ipv6 ];
 then
 echo "No change, old ip is" $old_ipv6 "and current ip is "$ipv6
