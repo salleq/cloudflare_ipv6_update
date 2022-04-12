@@ -1,11 +1,7 @@
 #!/bin/bash
 
 #change the variables as needed
-interface=eno1
-zone=ZONE ID WHERE DOMAIN(S) TO UPDATE RESIDE
-record=DOMAIN RECORD TO UPDATE
-token=SECRET TOKEN
-domain=some.domain.com
+source ./settings
 old_ipv6=$(cat $domain.ipv6)
 log_file=./$domain.log
 ip6_file=./$domain.ipv6
