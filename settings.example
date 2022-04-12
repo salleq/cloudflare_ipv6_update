@@ -1,0 +1,5 @@
+interface=eno1
+zone=ZONE ID WHERE DOMAIN(S) TO UPDATE RESIDE
+record=DOMAIN RECORD TO UPDATE
+token=SECRET TOKEN
+domain=some.domain.com
